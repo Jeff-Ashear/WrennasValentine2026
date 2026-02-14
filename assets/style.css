@@ -1,5 +1,7 @@
 body {
     background-color: rgb(67, 67, 242);
+
+     animation: colorShift 60s infinite;
 }
 
 #intro {
@@ -75,5 +77,4 @@ body {
     50% {box-shadow: 50px -50px 100px rgb(255, 30, 255)}
     75% {box-shadow: -50px 50px 100px rgb(255, 30, 255)}
     100% {box-shadow: 50px 50px 100px rgb(255, 230, 0)}
-
 }

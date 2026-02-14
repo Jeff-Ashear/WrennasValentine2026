@@ -17,11 +17,52 @@ let introPicPath = {
     </svg>
 </div>`]
 }
-let poemArray1 = ["My dear Bean it's a day all about valentines", "Wanting to make it so crystally clear", "Your dad's just bursting with a most grateful pride", "She's so big and so smart and so strong and so kind", "His love is right with you even when he's away", "On the far side of the planet the fusion continues", "Growing so fast dad can hardly believe it!", "You can know this for sure and I'll tell you why", "I love no matter the things that you do,", "You don't need to be fast or limber or strong,", "You needn't be clever or wealthy or classy", "You don't have to sing songs in Carnegie Hall", "You don't have to be pretty or make famous art", "I love you exactly as you are in this moment", "So if you ever feel lonely, or frightened or sad", "Remember you'll always have all his favor", "Through days and through weeks, through months and through years", "Both when we're together and when we're apart"]
+let poemArray1 = 
+[
+    "The day has arrived, my marvelous daughter,", 
+    "My sweet little bean, my bright shining star,", 
+    "First let me say, and say it quite clear:", 
+    "It’s steady and strong, it won’t wobble or run,", 
+    "But still, there are things that deserve some applause —",  
+    "You’re helpful and kind without needing nudges;",   
+    "Your sense of adventure is bold, wild, and free —",    
+    "To share in your quests (even ones slightly loud)",    
+    "Your strength is a marvel — a braid with no end",    
+    "Things that can bend and adapt seldom break.",    
+    "You’re curious too — asking “Why?” by the mile,",    
+    "You’re playful and silly and brilliantly spry —",     
+    "You're so strikingly smart, so clever and bright,",    
+    "Perhaps one of my favorites here on this list,",    
+    "So here is the truth and it’s wonderfully plain:",
+    "All the things on this list and a great many more,",
+    "But these reasons are extras and though the are great,",
+    "No reasons required, it will always be true,",       
+    "Both when we're together and when we're apart," 
+]
 
-let poemArray2 = ["When daddies are just about losing their minds!", "All the love in their hearts for their daughters so dear.", "To know that his Wrenna is making such strides.", "But that's all a bonus, as dad's love is blind.", "Like the sun is still burning when its not quite yet day.", "Just like dad's love for his fantabulous kid who's.", "He loves you so much it's hard to conceive it.", "Because for you to have it, you never need try.", "The things that you say or the gunk on your shoe.", "I love you already, I think I'll go on…", "I love you already, even if things get gassy.", "I love you right now, imperfections and all.", "I love you just as you are with all of my heart.", "And throughout any future, wouldn't you know it.", "Close your eyes for a moment and think of you dad.", "His support is undying and never will waver.", "About whether you're loved, you need not ever fear.", "I love you dear Wrenna with all of my heart!"]
+let poemArray2 = [
+    "When Dads send out their love like a sweet raft of otters.", 
+    "How lucky for me that you are who you are!", 
+    "My love needs no reason — it’s always right here.", 
+    "Like Earth always revolving around the bright sun.",  
+    "Your remarkable traits that earn “oohs!” and “ahs!”",     
+    "You leap into action no, grumbling or trudges!",    
+    "You’d pack up for Mars if it suited your needs.",    
+    "Makes Dad feel tremendously, happily proud.",    
+    "Of  heart, and of body, and a mind that can bend.",    
+    "Your courage and strength bring me joy I can't shake!",    
+    "With insights that make me blink twice and then smile.",    
+    "Like a tornado of glitter and giggles bouncing by.",    
+    "A powerful spark shining out as your light!",    
+    "Is your astonishing Kindness- it's not to be missed.",    
+    "I love you, my Bean, in sunshine and rain.",
+    "Fill my heart up with love and cause it to soar.",
+    "I would love reguardless if they all changed today.",
+    "The best thing in life is just simply you.",   
+    "I love you dear Wrenna, with all of my heart!", 
+]
 
-let picPath = ['./assets/images/pic0.jpg', './assets/images/pic1.jpg', './assets/images/two.jpeg', './assets/images/three.jpeg', './assets/images/four.jpg', './assets/images/five.jpg', './assets/images/six.jpg', './assets/images/seven.jpg', './assets/images/eight.jpg', './assets/images/nine.jpg', './assets/images/ten.jpg', './assets/images/eleven.jpg', './assets/images/twelve.jpg', './assets/images/thirteen.JPG', './assets/images/fourteen.jpeg', './assets/images/fifteen.jpg', './assets/images/sixteen.jpg',  './assets/images/cloudheart.jpg',]
+let picPath = ['./assets/images/zero.jpg', './assets/images/one.jpg', './assets/images/two.jpg', './assets/images/three.jpg', './assets/images/four.jpg', './assets/images/five.jpg', './assets/images/six.jpg', './assets/images/seven.jpg', './assets/images/eight.jpg', './assets/images/nine.jpg', './assets/images/ten.jpg', './assets/images/eleven.jpg', './assets/images/twelve.jpg', './assets/images/thirteen.JPG', './assets/images/fourteen.jpg', './assets/images/fifteen.jpg', './assets/images/sixteen.jpg', './assets/images/seventeen.jpg',  './assets/images/rainbow.jpg',]
 
 let buttonPath = {
     btnStart: [`<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-envelope-paper-heart-fill" viewBox="0 0 16 16">
@@ -45,11 +86,11 @@ let buttonPath = {
 }
 
 $('#startBtn').click(function () {
-    if (counter === 17) {
+    if (counter === 18) {
         $('.card-img-top').attr('id', 'cloudHeart')
     }
 
-    if (counter > 17) {
+    if (counter > 18) {
         location.reload(true)
     }
 
@@ -62,7 +103,8 @@ $('#startBtn').click(function () {
     advancePic(counter)
     advanceText(counter)
     // advanceBtn(counter)
-    setTimeout(function () {
+    setTimeout(function () 
+    {
         advanceCntr(counter)
     }, 3000)
 })
@@ -88,4 +130,4 @@ function advanceBtn() {
 
 function advanceCntr() {
     return counter++
-}
+}   
